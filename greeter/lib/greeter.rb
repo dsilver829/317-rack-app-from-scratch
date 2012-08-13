@@ -2,7 +2,7 @@ require "erb"
 
 class Greeter
 	def self.call(env)
-		new(env).finish
+		new(env).response.finish
 	end
 
   def initialize(env)
